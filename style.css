@@ -1,0 +1,152 @@
+/* Overall General Styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Merriweather", serif;
+}
+
+/* This allows the screen do the href move from nav-link alot more smoothly than normal */
+html{
+    scroll-behavior: smooth;   
+}
+
+p{
+    color:rgb(85,85,85);
+}
+
+/*Transition */
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* Desktop Navigation */
+nav, .nav-links {
+    display: flex; /* This puts the nav links and name on the same line */
+}
+
+nav {
+    justify-content: space-around; /* Leaves space between elements*/
+    align-items: center;
+    height:17vh; /* Taking 17% of the entier screen's view height */
+}
+
+.nav-links{
+    gap:2rem;
+    list-style: none;
+    font-size:1.5rem;
+}
+
+a {
+    color:black;
+    text-decoration: none; /*Removing the underline from the a link*/
+    text-decoration-color: white;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem; /*This creates a small gap between word and the underline*/
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo{
+    font-size:2rem;
+
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* Mobile Nav (Hamburger) */
+
+#hb-nav{
+    display:none;
+}
+
+.hb-menu{
+    position: relative;
+    display: inline-block;
+}
+
+/* This will change the nav to a column focused menu which we 
+use based off our media queries.*/
+.hb-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:24px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.hb-icon span{
+    width:100%;
+    height:2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out ;
+}
+
+.menu-links{
+    position: absolute;
+    top:100%;
+    right:0;
+    background-color: white;
+    width:fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition:all 0.3 ease-in-out;
+}
+
+.menu-links a{
+    display:block;
+    padding:10px;
+    text-align: center;
+    font-size:1.5rem;
+    color:black;
+    text-decoration:none;
+    transition: all 0.3 ease-in-out;
+
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height:300px;
+}
+
+/* This turns the 3 lines into 2 and rotate them to form an X */
+.hb-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+.hb-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hb-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px); 
+}
+
+.hb-icon span:first-child{
+    transform: none;
+}
+
+.hb-icon span:first-child {
+    opacity:1;
+}
+.hb-icon span:first-child {
+    transform: none;
+}
+
+
+/* Sections */
+
