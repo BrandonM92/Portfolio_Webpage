@@ -1,193 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <!-- Desktop Nav -->
     <nav id="desktop-nav">
-        <div class="logo">Brandon Mathews</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Brandon Mathews</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hamburger (Mobile) Nav -->
     <nav id="hb-nav">
-        <div class="logo">Brandon Mathews</div>
-        <div class="hb-menu">
-            <div class="hb-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-                
-            </div>
+      <div class="logo">Brandon Mathews</div>
+      <div class="hb-menu">
+        <div class="hb-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- PROFILE SECTION -->
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="images/my_photo.png" alt="Brandon Mathews Profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Brandon Mathews</h1>
-            <p class="section__text__p2">Aspiring Programmer/Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./asset/resume.pdf')"> 
-                    Download Resume</button>
-            
-                <button class="btn btn-color-1" onclick="location.href='./#contacts' "> 
-                    Contact Me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="asset/linkedin.png" alt="linkedin profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/brandon-mathews-1b2268201/'" />
-                <img src="asset/github.png" alt="linkedin profile" class="icon"
-                    onclick="location.href='https://github.com/BrandonM92'" />
-            </div>
+      <div class="section__pic-container">
+        <img src="images/my_photo.png" alt="Brandon Mathews Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Brandon Mathews</h1>
+        <p class="section__text__p2">Aspiring Programmer/Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./asset/resume.pdf')"
+          >
+            Download Resume
+          </button>
 
-
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./#contacts' "
+          >
+            Contact Me
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="asset/linkedin.png"
+            alt="linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/brandon-mathews-1b2268201/'"
+          />
+          <img
+            src="asset/github.png"
+            alt="linkedin profile"
+            class="icon"
+            onclick="location.href='https://github.com/BrandonM92'"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT ME SECTION -->
     <section id="about">
-        <p class="section__text__p1"> Get To Know More</p>
-        <h1 class="title"> About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./images/aboutphoto.png" alt="profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./asset/experience.png" alt="icon for experience" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>10 years <br>Warehouse Manager</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./asset/education.png" alt="icon for experience" class="icon" />
-                        <h3>Education: </h3>
-                        <p>B.IT Bachelor's Degree<br>
-                        Peirce College</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquid cumque maxime corporis! Rerum facilis eveniet, at sunt cum doloribus accusamus tempora magnam esse explicabo laborum! Ea corporis voluptatibus corrupti.</p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/aboutphoto.png"
+            alt="profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./asset/arrow.png" alt="arrow img" class="icon arrow" onclick="location.href='#experience'">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./asset/experience.png"
+                alt="icon for experience"
+                class="icon experience-icon"
+              />
+              <h3>Experience</h3>
+              <p>10 years <br />Warehouse Manager</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./asset/education.png"
+                alt="icon for experience"
+                class="icon experience-icon"
+              />
+              <h3>Education:</h3>
+              <p>
+                B.IT Bachelor's Degree<br />
+                Peirce College
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a programming enthusiast currently pursuing a bachelor's
+              degree in computer programming from Peirce College, with a
+              graduation date set for April 2024. While I currently have more
+              experience in Python programming, I have worked in 2D and 3D game
+              development in Unity using C#, as well as web development
+              utilizing HTML, CSS, and JavaScript. These were all personal
+              endeavors that I conducted in my sparetime to perfect my craft.
+              <br /><br />
+
+              Passionate about software and web development, I'm constantly
+              seeking to broaden my knowledge and skills in these fields. I
+              thrive in environments that foster innovation, collaboration, and
+              continuous improvement. I'm eager to join a company that shares
+              these values and can provide opportunities for professional growth
+              and advancement in the IT industry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./asset/arrow.png"
+        alt="arrow img"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
     </section>
 
     <!-- Expierence Section -->
     <section id="experience">
-        <p class="section__text__p1"> Explore My</p>
-        <h1 class="title"> Experience </h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title"> Junior Developer </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p> Intermediate </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p> Basic </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p> Basic </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>C# (Unity)</h3>
-                                <p>Basic-Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Game Development</h3>
-                                <p>Basic-Intermediate </p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Junior Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title"> Warehouse Manager </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>9+ Years Management Expierence</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Detail-Oriented</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Inventory Management</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Training & <br>Mentoring</h3>
-                            </div>
-                        </article>
-                        
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C# (Unity)</h3>
+                  <p>Basic-Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Game Development</h3>
+                  <p>Basic-Intermediate</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Warehouse Manager</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>9+ Years Management Expierence</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Detail-Oriented</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Inventory Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Training & <br />Mentoring</h3>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./asset/arrow.png" alt="arrow img" class="icon arrow" onclick="location.href='#projects'">
+      </div>
+      <img
+        src="./asset/arrow.png"
+        alt="arrow img"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
     </section>
 
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Previous</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/statcourt.png"
+                alt="photo of Stat Court UI"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">StatCourt</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrandonM92/Stat_Court.io'"
+              >
+                Github
+              </button>
+              <!-- <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/BrandonM92/Stat_Court.io'">
+                            Live Demo
+                        </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/image of custom webpage.png"
+                alt="photo of custom webpage"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              One Of A Craft Webpage
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrandonM92/OneOfACraft_WebPage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://brandonm92.github.io/OneOfACraft_WebPage/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/paint_game.jpg"
+                alt="photo of 2D Unity Game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Unity 2D Paint Game
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrandonM92/Stat_Court.io'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrandonM92/Stat_Court.io'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./asset/arrow.png"
+        alt="arrow img"
+        class="icon arrow"
+        onclick="location.href='#contacts'"
+      />
+    </section>
+
+
+    <!-- Contact Info -->
+    <section id="contact">
+        <p class="section__text__p1"> Get In Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./asset/email.png" alt="email png" class="icon contact-icon">
+                <p><a href="mailto:bjmathews@hotmail.com">
+                    Bjmathews@hotmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./asset/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/brandon-mathews-1b2268201/">
+                    LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> Copyright &copy; 2024 Brandon Mathews. All Rights Reserved.</p>
+    </footer>
+
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
