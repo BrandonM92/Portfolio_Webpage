@@ -10,6 +10,7 @@
 
 body{
     font-family: "Merriweather", serif;
+    /* background-color: rgb(87, 230, 211); */
 }
 
 /* This allows the screen do the href move from nav-link alot more smoothly than normal */
