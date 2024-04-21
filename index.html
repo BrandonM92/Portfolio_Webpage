@@ -31,10 +31,13 @@
             <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+                
             </div>
         </div>
     </nav>
@@ -73,9 +76,9 @@
         <h1 class="title"> About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./images/my_photo.png" alt="profile picture" class="about-pic"/>
+                <img src="./images/aboutphoto.png" alt="profile picture" class="about-pic"/>
             </div>
-            <div class="about-details-containers">
+            <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./asset/experience.png" alt="icon for experience" class="icon"/>
@@ -86,6 +89,7 @@
                         <img src="./asset/education.png" alt="icon for experience" class="icon" />
                         <h3>Education: </h3>
                         <p>B.IT Bachelor's Degree<br>
+                        Peirce College</p>
                     </div>
                 </div>
                 <div class="text-container">
@@ -93,10 +97,96 @@
                 </div>
             </div>
         </div>
-        <img src="./asset/arrow.png" alt="arrow img" class="icon arrow" onclick="location.href='./#experience'">
+        <img src="./asset/arrow.png" alt="arrow img" class="icon arrow" onclick="location.href='#experience'">
     </section>
 
-
+    <!-- Expierence Section -->
+    <section id="experience">
+        <p class="section__text__p1"> Explore My</p>
+        <h1 class="title"> Experience </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Junior Developer </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p> Intermediate </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p> Basic </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p> Basic </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>C# (Unity)</h3>
+                                <p>Basic-Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Game Development</h3>
+                                <p>Basic-Intermediate </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Warehouse Manager </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>9+ Years Management Expierence</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Detail-Oriented</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Inventory Management</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Training & <br>Mentoring</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="arrow img" class="icon arrow" onclick="location.href='#projects'">
+    </section>
 
     <script src="scripts.js"></script>
 </body>
