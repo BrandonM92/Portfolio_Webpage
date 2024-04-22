@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="title-card">
+        <div class="title">
+            <h1>High-Card</h1>
+            <h2>Designed by Brandon Mathews</h2>
+            <h2 class="round-text">Round: <span>0</span></h2>
+        </div>
+        <div class="scores">
+            <div class="score player">
+                Player Score: <span class="player-score-text">0</span>
+            </div>
+            <div class="score cpu">
+                CPU Score: <span class="cpu-score-text">0</span>
+            </div>
+        </div>
+    </header>
+    <main id="game-container">
+        <section class="game-blocks-container">
+            <section class="game-container-blocks player">
+                <h2 class="game-container-header">Player</h2>
+                <div class="game-block">
+                    <p class="score-value">0</p>
+                </div>
+            </section>
+            <section class="game-container-blocks cpu">
+                <h2 class="game-container-header">CPU</h2>
+                <div class="game-block">
+                    <p class="score-value">0</p>
+                </div>
+            </section>
+
+        </section>
+        <hr> 
+        <div id="card-hand-container">
+            <div class="player-hand-container">
+                <p>Player hand:</p>
+                <div class="hand-numbers">
+                    <!-- Card buttons will be added through javascript code -->
+                </div>
+            </div>
+        </div>
+        <div class="cpu-hand-container">
+            <p>CPU hand:</p>
+            <div class="cpu-hand hand-numbers">
+                <!-- CPU card buttons will be added through javascript code -->
+            </div>
+        </div>
+
+        <!-- Reset game and start next round buttons -->
+        <div class="button-container">
+            <button id="start-next-round-button">Next Round</button>
+            <button id="reset-game-button">Reset Game</button>
+        </div>
+
+
+        <div class="game-rules">
+            <h2>Rules:</h2>
+            <ol>
+                <li>Game is first to 5 or whoever has the most points once all 20 cards are played (10 from both player and CPU).</li>
+                <li>Each round is played where the player and CPU select one card (CPU card is random) and the person with the highest value wins the round.</li>
+                <li>Both players can only play a card one time per complete game. Once a round is over, the card will be removed from the player's respective hands.</li>
+                <li>Once you play your card, whoever has the higher value will get a point above the player box, and to go to the next round, click on the "Start Next Round" Button.</li>
+                <li>If you want to reset to play a fresh game, hit the "Reset Game" button.</li>
+            </ol>
+        </div>
+    </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
